@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  name: RINKU
+  name: Default
+  demands:
+    - agent.name -equals RINKU
 
 steps:
 - script: echo Hello, world!
